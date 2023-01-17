@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --light-white:rgba(255,255,255,.5);
+    --light-black:rgba(0,0,0,.3);
+    --light-nigga:rgba(0,0,0,.7);
+    --light-bg:rgba(255,255,255,.1);
+}
+*{
+    margin: 0;padding: 0;
+    border: none;outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+body{
+    background:linear-gradient(var(--light-white), var(--light-white)),url(/image/gato-de-botas.webp) no-repeat ;  
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    overflow-x: hidden;
+} 
+section{
+    margin: .5rem auto;
+    max-width: 1200px;
+
+}
+html{
+    font-size: 65.2%;
+  
+   
+}
+.heading{
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #000;
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh; 
+} 
+.header .head{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 4rem;
+    color: #fff;
+    
+}
+.header .head .search{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: var(--light-black); 
+    width: 28rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+}
+.header .head .search input{
+    height: 100%;
+    width: 100%;
+    padding: .5rem;
+    text-transform: none;
+    color: #fff;
+    background-color: transparent;
+
+}
+.header .head .search i{
+    margin-right: .3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.header .head .search ::placeholder{
+    color: #fff;
+}
+.header .head .bell{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 12rem;
+    height: 1.8rem;
+    border-radius: .5rem;
+    background: var(--light-black);
+    cursor: pointer;
+}
+.header .head .bell span{
+    font-size: 1.1rem;
+}
+.header .head .bell i{
+   font-size: 1.1rem;
+   margin: 0 1rem ;
+}
+.header .head .user{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: var(--light-black);
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.header .head .user span{
+    font-size:1.2rem ;
+}
+.header .head .user i{
+    font-size: 2rem;
+    margin: 0 .7rem;
+}
+/* inicio home  */
+ .home{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background:linear-gradient(360deg,#000,transparent 40%),url(/image/gato-de-botas.webp) no-repeat ;
+    background-position: center;
+    background-size:cover;
+    border-radius: .5rem;
+    height: 75%;
+    overflow: hidden;
+}
+.home .content{
+    text-align: center;
+    max-width:60rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+}
+.home .content h1{
+    text-transform: none;
+    font-size: 3rem;
+    color: #fff;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+/* inicio movies */
+.movies .box{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}   
+.movies .box .content{
+    background:var(--light-nigga) ;
+    width: 100%;
+}
+.movies .box .content img{
+    width: 100%;
+    height: 30rem;
+}
+.movies .box .content h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.movies .box  .content p{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querie */
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        margin: 0rem auto;
+        padding: 1rem 2rem;
+    }
+    .home{
+        width: 96%;
+    }
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    
+}
