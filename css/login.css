@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+:root{
+    --light-white:rgba(255,255,255,.5);
+    --light-black:rgba(0,0,0,.3);
+    --black:rgba(0,0,0,.7);
+    --light-bg:rgba(255,255,255,.1);
+    --main-color:#ff0;
+}
+*{
+    margin: 0;padding: 0;
+    border: none;outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+.btn{
+    display: block;
+    border-radius: .5rem;
+    padding: 1.2rem 3rem;
+    background: var(--light-white);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+.home{
+    background:linear-gradient(350deg,var(--light-black),var(--black) 100%),url(/image/series.jpg) no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover ;
+    background-blend-mode: multiply;
+    width: 100vw;
+    height: 100vh; 
+}
+.home .flex{
+    min-height: calc(100vh - 10rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .flex form{
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    padding: 2rem;
+    width: 40rem;
+    backdrop-filter: blur(.6rem);
+}
+.home .flex form h3{
+    font-size: 2.5rem;
+    color: var(--light-white);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.home .flex form .box{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--light-white);
+    text-transform: none;
+    background: var(--light-black);
+    margin: 1rem 0;
+}
+.home .flex .checkbox {
+    display: flex;
+    padding-top: .6rem;
+}
+.home .flex .checkbox .check-one{
+    font-size: 1.4rem;
+    margin-left:.5rem ;
+    color: #fff;
+}
+.home .flex .checkbox .check-two{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left:auto ;
+}
+.home .flex .checkbox .check-two:hover{
+     text-decoration: underline;
+}
+.home .flex .login_footer{
+   margin: 4rem 0;
+}
+.home .flex .login_footer .sign_up{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.home .flex .login_footer  a{
+    color:#fff;
+}
+.home .flex .login_footer .terms{
+    font-size: 1.4rem;
+    text-shadow: 1rem;
+    font-weight: 600;
+    color: #000;
+}
